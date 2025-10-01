@@ -165,9 +165,13 @@ function handleStartAction() {
   const username = usernameInput.value.trim();
   if (username !== "") {
     if (username.length < 4) {
+      const usernameError = document.getElementById("username-error");
+
       usernameInput.classList.add("input-error");
       usernameInput.setAttribute("title", uiStrings.tooSimpleUsername);
       usernameInput.focus();
+
+      usernameError.innerHTML = uiStrings.tooSimpleUsername;
       return;
     }
 

@@ -44,6 +44,7 @@
       <div class="controls-container bottom-controls">
         <form class="submit-form-bottom" action="/submit" method="POST">
           <input id="username" name="username" type="text" placeholder="<%= uiStrings.usernamePrompt %>"/>
+          <span id="username-error"></span>
           <input id="correct-bottom-hidden" name="correct" type="hidden"/>
           <input id="total-bottom-hidden" name="total" type="hidden"/>
           <button class="start-btn"><%= uiStrings.startButton %></button>
